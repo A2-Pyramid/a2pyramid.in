@@ -35,6 +35,13 @@ const Instagram = (props) => (
   </svg>
 );
 
+const Youtube = (props) => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+  </svg>
+);
+
 // Color Palette Constants
 const colors = {
   primary: '#116B6B',      // Teal
@@ -1156,10 +1163,9 @@ export default function App() {
               Empowering ideas through robust digital solutions, creative storytelling, teacher discovery, and professional project management.
             </p>
             <div className="social-icons">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook /></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><Twitter /></a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin /></a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram /></a>
+              <a href="https://www.linkedin.com/in/a2-pyramid-global-854354371/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin /></a>
+              <a href="https://instagram.com/a2pyramid" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram /></a>
+                <a href="https://www.youtube.com/@a2PyramidEdutech" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><Youtube /></a>
             </div>
           </FooterBrandCol>
 
@@ -1195,11 +1201,11 @@ export default function App() {
               </div>
               <div className="contact-item">
                 <Mail />
-                <span>contact@a2pyramid.com</span>
+                <span>studypyramid@gmail.com</span>
               </div>
               <div className="contact-item">
                 <Phone />
-                <span>+91 (Available on Request)</span>
+                <span>+91 94729 94483</span>
               </div>
             </ContactInfoList>
           </FooterCol>

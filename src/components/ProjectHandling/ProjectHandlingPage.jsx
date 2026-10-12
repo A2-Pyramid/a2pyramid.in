@@ -368,8 +368,8 @@ export const ProjectHandlingPage = ({ onBackToMain, navigateTo }) => {
         <div className="max-w-7xl mx-auto border-t border-slate-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© 2026 A2 Pyramid Edutech Pvt. Ltd. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <span>contact@a2pyramid.com</span>
-            <span>+91 (Available on Request)</span>
+            <span>studypyramid@gmail.com</span>
+            <span>+91 94729 94483</span>
           </div>
         </div>
       </footer>

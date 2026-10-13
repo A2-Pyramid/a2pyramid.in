@@ -41,17 +41,14 @@ export const AdComicsFooter = ({ setActiveTab }) => {
 
           {/* Social Icons */}
           <div className="flex items-center gap-4 text-slate-400 text-lg">
-            <a href="#" className="w-10 h-10 rounded-full bg-[#12141c] border border-slate-800 flex items-center justify-center hover:text-cyan-400 hover:border-cyan-500 transition-all">
-              <i className="fa-brands fa-x-twitter"></i>
+            <a href="https://www.linkedin.com/in/a2-pyramid-global-854354371/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#12141c] border border-slate-800 flex items-center justify-center hover:text-cyan-400 hover:border-cyan-500 transition-all" aria-label="LinkedIn">
+              <i className="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-[#12141c] border border-slate-800 flex items-center justify-center hover:text-cyan-400 hover:border-cyan-500 transition-all">
-              <i className="fa-brands fa-discord"></i>
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-[#12141c] border border-slate-800 flex items-center justify-center hover:text-cyan-400 hover:border-cyan-500 transition-all">
-              <i className="fa-brands fa-youtube"></i>
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-[#12141c] border border-slate-800 flex items-center justify-center hover:text-cyan-400 hover:border-cyan-500 transition-all">
+            <a href="https://instagram.com/a2pyramid" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#12141c] border border-slate-800 flex items-center justify-center hover:text-cyan-400 hover:border-cyan-500 transition-all" aria-label="Instagram">
               <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@a2PyramidEdutech" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#12141c] border border-slate-800 flex items-center justify-center hover:text-cyan-400 hover:border-cyan-500 transition-all" aria-label="YouTube">
+              <i className="fa-brands fa-youtube"></i>
             </a>
           </div>
         </div>

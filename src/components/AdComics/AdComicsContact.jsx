@@ -10,10 +10,8 @@ export const AdComicsContact = ({ showToast }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    showToast(
-      'Message Transmitted',
-      `Thank you ${formData.name || 'friend'}. Your message regarding ${formData.subject} has been received.`
-    );
+    const mailto = `mailto:studypyramid@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
+    window.location.href = mailto;
     setFormData({ name: '', email: '', subject: 'general', message: '' });
   };
 
@@ -49,24 +47,24 @@ export const AdComicsContact = ({ showToast }) => {
             <div className="p-6 rounded-2xl bg-[#12141c] border border-slate-800/80 hover:border-blue-500/40 transition-all [box-shadow:0_0_35px_rgba(59,130,246,0.15)]">
               <span className="text-xs text-blue-400 font-semibold tracking-widest uppercase block mb-1">General Inquiries</span>
               <p className="text-xs text-slate-400 mb-3">For general questions about AD Comics.</p>
-              <a href="mailto:hello@adcomics.com" className="text-sm font-semibold text-white hover:text-blue-400 transition-colors font-mono">
-                hello@adcomics.com
+              <a href="mailto:studypyramid@gmail.com" className="text-sm font-semibold text-white hover:text-blue-400 transition-colors font-mono">
+                studypyramid@gmail.com
               </a>
             </div>
 
             <div className="p-6 rounded-2xl bg-[#12141c] border border-slate-800/80 hover:border-blue-500/40 transition-all [box-shadow:0_0_35px_rgba(59,130,246,0.15)]">
               <span className="text-xs text-blue-400 font-semibold tracking-widest uppercase block mb-1">Business & Partnerships</span>
               <p className="text-xs text-slate-400 mb-3">For partnerships, investment discussions, distribution, licensing and business opportunities.</p>
-              <a href="mailto:partners@adcomics.com" className="text-sm font-semibold text-white hover:text-blue-400 transition-colors font-mono">
-                partners@adcomics.com
+              <a href="mailto:studypyramid@gmail.com" className="text-sm font-semibold text-white hover:text-blue-400 transition-colors font-mono">
+                studypyramid@gmail.com
               </a>
             </div>
 
             <div className="p-6 rounded-2xl bg-[#12141c] border border-slate-800/80 hover:border-blue-500/40 transition-all [box-shadow:0_0_35px_rgba(59,130,246,0.15)]">
               <span className="text-xs text-blue-400 font-semibold tracking-widest uppercase block mb-1">Media & Press</span>
               <p className="text-xs text-slate-400 mb-3">For media inquiries, interviews and press-related communication.</p>
-              <a href="mailto:media@adcomics.com" className="text-sm font-semibold text-white hover:text-blue-400 transition-colors font-mono">
-                media@adcomics.com
+              <a href="mailto:studypyramid@gmail.com" className="text-sm font-semibold text-white hover:text-blue-400 transition-colors font-mono">
+                studypyramid@gmail.com
               </a>
             </div>
           </div>
@@ -176,27 +174,11 @@ export const AdComicsContact = ({ showToast }) => {
 
           <div className="text-center">
             <a
-              href="mailto:partners@adcomics.com"
+              href="mailto:studypyramid@gmail.com"
               className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs tracking-widest uppercase transition-all shadow-xl shadow-blue-600/30 border border-blue-400/30"
             >
               START A CONVERSATION →
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Community Section */}
-      <section className="py-16 bg-[#0a0b0e] border-b border-slate-800/60 text-center">
-        <div className="max-w-4xl mx-auto px-6 space-y-6">
-          <h3 className="text-2xl font-black font-['Outfit'] text-white">FOLLOW THE JOURNEY</h3>
-          <p className="text-slate-400 text-sm max-w-md mx-auto">
-            “Stay connected as the AD Comics universe continues to grow.”
-          </p>
-          <div className="flex items-center justify-center gap-6 pt-2">
-            <a href="#" className="w-12 h-12 rounded-xl bg-[#12141c] border border-slate-800 flex items-center justify-center text-slate-300 hover:text-white hover:border-blue-500 transition-all font-bold text-sm">IG</a>
-            <a href="#" className="w-12 h-12 rounded-xl bg-[#12141c] border border-slate-800 flex items-center justify-center text-slate-300 hover:text-white hover:border-blue-500 transition-all font-bold text-sm">YT</a>
-            <a href="#" className="w-12 h-12 rounded-xl bg-[#12141c] border border-slate-800 flex items-center justify-center text-slate-300 hover:text-white hover:border-blue-500 transition-all font-bold text-sm">IN</a>
-            <a href="#" className="w-12 h-12 rounded-xl bg-[#12141c] border border-slate-800 flex items-center justify-center text-slate-300 hover:text-white hover:border-blue-500 transition-all font-bold text-sm">X</a>
           </div>
         </div>
       </section>

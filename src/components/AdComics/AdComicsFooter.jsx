@@ -56,8 +56,8 @@ export const AdComicsFooter = ({ setActiveTab }) => {
         <div className="border-t border-slate-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© AD COMICS — ORIGINAL SUPERHERO UNIVERSE. ALL RIGHTS RESERVED.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-cyan-400 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-cyan-400 transition-colors">Terms of Service</a>
+            <button onClick={() => setActiveTab('contact')} className="hover:text-cyan-400 transition-colors">Privacy Policy</button>
+            <button onClick={() => setActiveTab('contact')} className="hover:text-cyan-400 transition-colors">Terms of Service</button>
             <button onClick={() => setActiveTab('investor')} className="hover:text-cyan-400 transition-colors">
               Investor Relations
             </button>

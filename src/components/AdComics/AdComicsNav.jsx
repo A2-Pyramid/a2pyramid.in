@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const AdComicsNav = ({ activeTab, setActiveTab, onBackToMain, openUniverseModal }) => {
+export const AdComicsNav = ({ activeTab, setActiveTab, onBackToMain }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navItems = [
@@ -90,13 +90,15 @@ export const AdComicsNav = ({ activeTab, setActiveTab, onBackToMain, openUnivers
       </div>
 
       {/* Mobile Drawer */}
-      {mobileOpen && (
-        <div className="md:hidden bg-[#12141c] border-b border-slate-800 px-6 py-4 flex flex-col gap-4">
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        mobileOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+      }`}>
+        <div className="bg-[#12141c] border-b border-slate-800 px-6 py-4 flex flex-col gap-4">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => handleTabClick(item.id)}
-              className={`text-left font-medium tracking-wider uppercase text-sm font-['Orbitron'] ${
+              className={`text-left font-medium tracking-wider uppercase text-sm font-['Orbitron'] py-1 ${
                 activeTab === item.id ? 'text-cyan-400 font-bold' : 'text-slate-300'
               }`}
             >
@@ -110,7 +112,7 @@ export const AdComicsNav = ({ activeTab, setActiveTab, onBackToMain, openUnivers
             ← Return to A2 Pyramid Main Site
           </button>
         </div>
-      )}
+      </div>
     </header>
   );
 };

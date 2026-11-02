@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => {
+export const AdComicsHome = ({ openHeroModal, showUniverseLore }) => {
   return (
     <>
       {/* Hero Section */}
@@ -38,6 +38,7 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
               </a>
               <a
                 href="#universe"
+                onClick={e => { e.preventDefault(); document.getElementById('universe')?.scrollIntoView({ behavior: 'smooth' }); }}
                 className="px-8 py-4 rounded-xl border border-slate-700 bg-gradient-to-br from-white/5 to-[#12141c]/80 hover:bg-slate-800/80 text-white font-semibold uppercase tracking-wider text-sm transition-all transform hover:-translate-y-1 flex items-center gap-3"
               >
                 <span>Discover AD Comics</span>
@@ -61,39 +62,67 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
             </div>
           </div>
 
-          {/* Hero Image Showcase */}
-          <div className="lg:col-span-6 relative">
-            <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-2xl border border-slate-700/50 p-4 bg-gradient-to-b from-slate-900/90 to-black/90 shadow-2xl overflow-hidden flex items-center justify-center group">
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(30,58,138,0.3)_0%,rgba(2,6,23,0.8)_50%,#000_100%)] pointer-events-none"></div>
+          {/* Cinematic TV Showcase */}
+          <div className="lg:col-span-6 relative flex flex-col items-center">
 
-              <div className="absolute inset-0 flex items-center justify-center p-4">
-                <div className="relative w-full h-full rounded-xl overflow-hidden shadow-2xl border border-cyan-500/20">
-                  <img
-                    src="/polaris.jpeg"
-                    alt="AD Comics Cinematic Ensemble"
-                    className="w-full h-full object-cover object-top opacity-60 group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+            {/* Top broadcast bar */}
+            <div className="w-full flex items-center justify-between px-4 py-2 mb-2">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <span className="text-[10px] font-mono text-red-400 uppercase tracking-widest">LIVE PROTOTYPE</span>
+              </div>
+              <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest font-['Orbitron']">AD-COMICS · PHASE 1</span>
+            </div>
 
-                  <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-cyan-500/40 text-[11px] cinematic-font text-cyan-300 flex items-center gap-2 font-['Orbitron']">
-                    <i className="fa-solid fa-crosshairs text-cyan-400"></i> ENSEMBLE FOCUS: POLARIS (CENTER)
-                  </div>
+            {/* TV Body */}
+            <div className="relative w-full">
+              {/* Outer TV shell */}
+              <div className="relative rounded-[2rem] bg-gradient-to-b from-[#1a1d2e] to-[#0d0f1a] border-[3px] border-slate-700/80 shadow-[0_0_60px_rgba(6,182,212,0.25),0_0_120px_rgba(6,182,212,0.1),inset_0_1px_0_rgba(255,255,255,0.05)] p-3">
 
-                  <div className="absolute bottom-6 left-6 right-6 flex flex-wrap items-center justify-between gap-3 bg-[#08090d]/80 backdrop-blur-md p-4 rounded-xl border border-slate-800">
-                    <div className="flex items-center gap-2">
-                      <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
-                      <span className="text-xs uppercase tracking-wider font-semibold text-white">Phase 1 Lineup Active</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-xs text-cyan-400 font-medium">
-                      <span>Polaris</span> &bull; 
-                      <span>Vajra</span> &bull; 
-                      <span>Ghostmark</span> &bull; 
-                      <span>Cybersnare</span> &bull; 
-                      <span>Forge</span>
+                {/* Screen bezel */}
+                <div className="rounded-[1.4rem] bg-black overflow-hidden border border-slate-800/60 shadow-inner">
+
+                  {/* Screen scanline overlay */}
+                  <div className="relative">
+                    <div className="absolute inset-0 z-10 pointer-events-none bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(0,0,0,0.08)_2px,rgba(0,0,0,0.08)_4px)] rounded-[1.4rem]"></div>
+                    <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_60%,rgba(0,0,0,0.5)_100%)] rounded-[1.4rem]"></div>
+
+                    {/* YouTube Embed */}
+                    <div className="aspect-video">
+                      <iframe
+                        src="https://www.youtube.com/embed/Yq9ayvA6YR0?autoplay=1&mute=1&loop=1&playlist=Yq9ayvA6YR0&controls=1&modestbranding=1&rel=0"
+                        title="Polaris - AD Comics Prototype"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="w-full h-full"
+                      ></iframe>
                     </div>
                   </div>
                 </div>
+
+                {/* TV bottom bar with brand */}
+                <div className="flex items-center justify-between px-4 pt-3 pb-1">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_6px_rgba(6,182,212,0.8)]"></div>
+                    <span className="text-[10px] font-['Orbitron'] text-cyan-400 tracking-widest uppercase">AD COMICS</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-cyan-500/60"></div>
+                  </div>
+                </div>
               </div>
+
+              {/* TV Stand neck */}
+              <div className="mx-auto w-10 h-5 bg-gradient-to-b from-[#1a1d2e] to-[#0d0f1a] border-x border-slate-700/60"></div>
+              {/* TV Stand base */}
+              <div className="mx-auto w-40 h-3 rounded-b-xl bg-gradient-to-b from-[#1a1d2e] to-[#0d0f1a] border border-t-0 border-slate-700/60 shadow-[0_4px_20px_rgba(6,182,212,0.15)]"></div>
+            </div>
+
+            <div className="mt-5 flex items-center gap-3 px-4 py-2.5 rounded-xl bg-[#12141c]/80 border border-slate-800 backdrop-blur max-w-full overflow-hidden">
+              <i className="fa-solid fa-film text-cyan-400 text-sm shrink-0"></i>
+              <span className="text-xs text-slate-300 font-light truncate">Polaris · <span className="text-cyan-400 font-semibold">Prototype Demo</span> · Phase 1 Preview</span>
             </div>
           </div>
         </div>
@@ -113,26 +142,22 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
           </div>
 
           {/* 5 Character Cards Grid */}
-          <div id="characters" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 pt-4">
+          <div id="characters" className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6 pt-4">
             {/* Polaris */}
             <div className="group relative rounded-2xl border border-slate-700/40 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-cyan-500/60 hover:shadow-2xl hover:shadow-cyan-500/20 flex flex-col">
               <div className="relative aspect-[3/4] overflow-hidden">
                 <img src="/polaris.jpeg" alt="Polaris" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
-                <span className="absolute top-3 left-3 bg-cyan-500/20 backdrop-blur-md border border-cyan-500/40 text-cyan-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Visual Center</span>
+                <span className="absolute top-3 left-3 bg-cyan-500/20 backdrop-blur-md border border-cyan-500/40 text-cyan-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Core Hero 01</span>
               </div>
               <div className="p-5 flex flex-col flex-grow justify-between">
                 <div>
                   <div className="text-xs text-cyan-400 font-semibold tracking-widest uppercase mb-1">Magnetic Power</div>
                   <h3 className="cinematic-font text-lg font-bold text-white mb-2 font-['Orbitron']">POLARIS</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed">Athletic male hero in dark futuristic suit with floating metallic objects and blue-white magnetic energy.</p>
+                  <p className="text-slate-400 text-xs leading-relaxed">Controls magnetic forces, manipulates iron and metallic elements, and commands the battlefield with electromagnetic precision.</p>
                 </div>
-                <button
-                  onClick={() => openHeroModal('polaris')}
-                  className="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-cyan-500 hover:text-black text-cyan-400 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
-                >
-                  <span>View Dossier</span>
-                  <i className="fa-solid fa-chevron-right text-[10px]"></i>
+                <button onClick={() => openHeroModal('polaris')} className="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-cyan-500 hover:text-black text-cyan-400 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
+                  <span>View Dossier</span><i className="fa-solid fa-chevron-right text-[10px]"></i>
                 </button>
               </div>
             </div>
@@ -142,20 +167,16 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
               <div className="relative aspect-[3/4] overflow-hidden">
                 <img src="/vajra.jpeg" alt="Vajra" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
-                <span className="absolute top-3 left-3 bg-amber-500/20 backdrop-blur-md border border-amber-500/40 text-amber-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Divine Force</span>
+                <span className="absolute top-3 left-3 bg-amber-500/20 backdrop-blur-md border border-amber-500/40 text-amber-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Core Hero 02</span>
               </div>
               <div className="p-5 flex flex-col flex-grow justify-between">
                 <div>
                   <div className="text-xs text-amber-400 font-semibold tracking-widest uppercase mb-1">Divine Strength</div>
                   <h3 className="cinematic-font text-lg font-bold text-white mb-2 font-['Orbitron']">VAJRA</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed">Muscular warrior combining ancient divine armor with modern superhero aesthetics and radiating energy.</p>
+                  <p className="text-slate-400 text-xs leading-relaxed">Inspired by the divine powers of Lord Hanuman Ji — extraordinary strength, size transformation, and celestial flight.</p>
                 </div>
-                <button
-                  onClick={() => openHeroModal('vajra')}
-                  className="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-black text-amber-400 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
-                >
-                  <span>View Dossier</span>
-                  <i className="fa-solid fa-chevron-right text-[10px]"></i>
+                <button onClick={() => openHeroModal('vajra')} className="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-black text-amber-400 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
+                  <span>View Dossier</span><i className="fa-solid fa-chevron-right text-[10px]"></i>
                 </button>
               </div>
             </div>
@@ -165,66 +186,54 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
               <div className="relative aspect-[3/4] overflow-hidden">
                 <img src="/ghostmark.jpeg" alt="Ghostmark" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
-                <span className="absolute top-3 left-3 bg-purple-500/20 backdrop-blur-md border border-purple-500/40 text-purple-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Stealth Ops</span>
+                <span className="absolute top-3 left-3 bg-purple-500/20 backdrop-blur-md border border-purple-500/40 text-purple-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Core Hero 03</span>
               </div>
               <div className="p-5 flex flex-col flex-grow justify-between">
                 <div>
                   <div className="text-xs text-purple-400 font-semibold tracking-widest uppercase mb-1">The Infiltrator</div>
                   <h3 className="cinematic-font text-lg font-bold text-white mb-2 font-['Orbitron']">GHOSTMARK</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed">Mysterious infiltrator in dark tactical suit with masked face, standing silently in the shadows.</p>
+                  <p className="text-slate-400 text-xs leading-relaxed">Master infiltrator who merges with enemies to access their memories, secrets and weaknesses from within.</p>
                 </div>
-                <button
-                  onClick={() => openHeroModal('ghostmark')}
-                  className="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-purple-500 hover:text-white text-purple-400 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
-                >
-                  <span>View Dossier</span>
-                  <i className="fa-solid fa-chevron-right text-[10px]"></i>
+                <button onClick={() => openHeroModal('ghostmark')} className="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-purple-500 hover:text-white text-purple-400 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
+                  <span>View Dossier</span><i className="fa-solid fa-chevron-right text-[10px]"></i>
                 </button>
               </div>
             </div>
 
             {/* Cybersnare */}
-            <div className="group relative rounded-2xl border border-slate-700/40 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/60 hover:shadow-2xl hover:shadow-emerald-500/20 flex flex-col">
+            <div className="group relative rounded-2xl border border-slate-700/40 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-sky-500/60 hover:shadow-2xl hover:shadow-sky-500/20 flex flex-col">
               <div className="relative aspect-[3/4] overflow-hidden">
                 <img src="/cybersnare.jpeg" alt="Cybersnare" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
-                <span className="absolute top-3 left-3 bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 text-emerald-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">AI Recon</span>
+                <span className="absolute top-3 left-3 bg-sky-500/20 backdrop-blur-md border border-sky-500/40 text-sky-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Core Hero 04</span>
               </div>
               <div className="p-5 flex flex-col flex-grow justify-between">
                 <div>
-                  <div className="text-xs text-emerald-400 font-semibold tracking-widest uppercase mb-1">The AI Machine</div>
+                  <div className="text-xs text-sky-400 font-semibold tracking-widest uppercase mb-1">The AI Machine</div>
                   <h3 className="cinematic-font text-lg font-bold text-white mb-2 font-['Orbitron']">CYBERSNARE</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed">Advanced AI-powered reconstructing machine with glowing tech elements and internal identity VECTOR.</p>
+                  <p className="text-slate-400 text-xs leading-relaxed">AI-powered reconstructing machine integrated with internal intelligence system <span className="text-sky-400 font-semibold">VECTOR</span>.</p>
                 </div>
-                <button
-                  onClick={() => openHeroModal('cybersnare')}
-                  className="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-emerald-500 hover:text-black text-emerald-400 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
-                >
-                  <span>View Dossier</span>
-                  <i className="fa-solid fa-chevron-right text-[10px]"></i>
+                <button onClick={() => openHeroModal('cybersnare')} className="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-sky-500 hover:text-black text-sky-400 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
+                  <span>View Dossier</span><i className="fa-solid fa-chevron-right text-[10px]"></i>
                 </button>
               </div>
             </div>
 
             {/* Forge */}
-            <div className="group relative rounded-2xl border border-slate-700/40 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-blue-500/60 hover:shadow-2xl hover:shadow-blue-500/20 flex flex-col">
+            <div className="group relative rounded-2xl border border-slate-700/40 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/60 hover:shadow-2xl hover:shadow-emerald-500/20 flex flex-col">
               <div className="relative aspect-[3/4] overflow-hidden">
                 <img src="/forge.jpeg" alt="Forge" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
-                <span className="absolute top-3 left-3 bg-blue-500/20 backdrop-blur-md border border-blue-500/40 text-blue-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Master Builder</span>
+                <span className="absolute top-3 left-3 bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 text-emerald-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Core Hero 05</span>
               </div>
               <div className="p-5 flex flex-col flex-grow justify-between">
                 <div>
-                  <div className="text-xs text-blue-400 font-semibold tracking-widest uppercase mb-1">The Unknown Force</div>
+                  <div className="text-xs text-emerald-400 font-semibold tracking-widest uppercase mb-1">The Unknown Force</div>
                   <h3 className="cinematic-font text-lg font-bold text-white mb-2 font-['Orbitron']">FORGE</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed">Powerful original hero with strong heroic presence and distinctive futuristic armor design in confident stance.</p>
+                  <p className="text-slate-400 text-xs leading-relaxed">A powerful and mysterious force with industrial strength and self-repairing quantum alloy armor. His story is only beginning.</p>
                 </div>
-                <button
-                  onClick={() => openHeroModal('forge')}
-                  className="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-blue-500 hover:text-black text-blue-400 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
-                >
-                  <span>View Dossier</span>
-                  <i className="fa-solid fa-chevron-right text-[10px]"></i>
+                <button onClick={() => openHeroModal('forge')} className="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-emerald-500 hover:text-black text-emerald-400 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
+                  <span>View Dossier</span><i className="fa-solid fa-chevron-right text-[10px]"></i>
                 </button>
               </div>
             </div>
@@ -246,11 +255,11 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
 
               <h2 className="cinematic-font text-3xl sm:text-5xl font-black text-white mb-6 leading-tight font-['Orbitron']">
                 EVERY HERO HAS A STORY.<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">EVERY STORY CONNECTS.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">EVERY STORY IS BEGINNING.</span>
               </h2>
 
               <p className="text-slate-300 text-base sm:text-lg mb-8 leading-relaxed font-light">
-                Explore uncharted dimensions, hidden syndicates, cosmic energy anomalies, and forgotten mythologies that tie the AD Comics universe into an immersive narrative web.
+                Five individual origins. Five separate paths. One universe taking shape. Explore the Phase 1 lore map to discover each hero's story before the larger universe unfolds.
               </p>
 
               <div className="flex flex-wrap items-center justify-center gap-4">
@@ -260,12 +269,7 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
                 >
                   Explore Lore Map
                 </button>
-                <button
-                  onClick={() => showToast('Cinematic Teaser', 'Phase 1 official trailer preview loaded successfully in cinematic presentation mode.')}
-                  className="px-8 py-3.5 rounded-xl border border-slate-700 hover:bg-slate-800 text-white font-semibold uppercase tracking-wider text-xs transition-all"
-                >
-                  Watch Phase 1 Teaser
-                </button>
+
               </div>
             </div>
           </div>

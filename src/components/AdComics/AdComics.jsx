@@ -6,7 +6,7 @@ import { AdComicsCharacters } from './AdComicsCharacters';
 import { AdComicsContact } from './AdComicsContact';
 import { AdComicsInvestor } from './AdComicsInvestor';
 import { AdComicsFooter } from './AdComicsFooter';
-import { HeroModal, UniverseHubModal, ToastNotification } from './AdComicsModals';
+import { HeroModal, LoreMapModal, ToastNotification } from './AdComicsModals';
 
 const HEROES_DATA = {
   polaris: {
@@ -60,7 +60,7 @@ export const AdComics = ({ onBackToMain, initialTab = 'home' }) => {
   const [activeTab, setActiveTab] = useState(initialTab);
   const [activeHero, setActiveHero] = useState(null);
   const [isHeroModalOpen, setIsHeroModalOpen] = useState(false);
-  const [isUniverseModalOpen, setIsUniverseModalOpen] = useState(false);
+  const [isLoreMapOpen, setIsLoreMapOpen] = useState(false);
   const [toast, setToast] = useState({ visible: false, title: '', desc: '' });
 
   useEffect(() => {
@@ -92,12 +92,7 @@ export const AdComics = ({ onBackToMain, initialTab = 'home' }) => {
     }, 4000);
   };
 
-  const showUniverseLore = () => {
-    showToast(
-      'AD Comics Universe Map',
-      'Phase 1 lore web is fully synchronized. Investor briefing documents available upon request.'
-    );
-  };
+  const showUniverseLore = () => setIsLoreMapOpen(true);
 
   return (
     <div className="min-h-screen bg-[#08090d] text-[#f1f5f9] font-['Inter'] selection:bg-cyan-500 selection:text-black">
@@ -106,7 +101,6 @@ export const AdComics = ({ onBackToMain, initialTab = 'home' }) => {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         onBackToMain={onBackToMain}
-        openUniverseModal={() => setIsUniverseModalOpen(true)}
       />
 
       {/* Tab Content */}
@@ -114,7 +108,6 @@ export const AdComics = ({ onBackToMain, initialTab = 'home' }) => {
         {activeTab === 'home' && (
           <AdComicsHome
             openHeroModal={openHeroModal}
-            showToast={showToast}
             showUniverseLore={showUniverseLore}
           />
         )}
@@ -122,7 +115,6 @@ export const AdComics = ({ onBackToMain, initialTab = 'home' }) => {
         {activeTab === 'about' && (
           <AdComicsAbout
             openHeroModal={openHeroModal}
-            openUniverseModal={() => setIsUniverseModalOpen(true)}
           />
         )}
 
@@ -139,9 +131,7 @@ export const AdComics = ({ onBackToMain, initialTab = 'home' }) => {
         )}
 
         {activeTab === 'contact' && (
-          <AdComicsContact
-            showToast={showToast}
-          />
+          <AdComicsContact />
         )}
       </main>
 
@@ -155,9 +145,9 @@ export const AdComics = ({ onBackToMain, initialTab = 'home' }) => {
         onClose={closeHeroModal}
       />
 
-      <UniverseHubModal
-        isOpen={isUniverseModalOpen}
-        onClose={() => setIsUniverseModalOpen(false)}
+      <LoreMapModal
+        isOpen={isLoreMapOpen}
+        onClose={() => setIsLoreMapOpen(false)}
       />
 
       <ToastNotification

@@ -14,7 +14,7 @@ const HEROES_DATA = {
     subtitle: "Magnetic Power & Team Leader",
     power: "Magnetic Power",
     badge: "Visual Center",
-    img: "https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=600&auto=format&fit=crop",
+    img: "/polaris.jpeg",
     bio: "Polaris is the magnetic anchor of the AD Comics universe. Possessing master-level control over electromagnetic fields, he commands battlefield dynamics with precision.",
     origin: "Exposed to a high-density stellar magnetic storm during an orbital experiment, fusing his cellular structure with quantum magnetic flux."
   },
@@ -23,7 +23,7 @@ const HEROES_DATA = {
     subtitle: "Divine Strength & Ancient Warrior",
     power: "Divine Strength",
     badge: "Divine Force",
-    img: "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=600&auto=format&fit=crop",
+    img: "/vajra.jpeg",
     bio: "A towering warrior radiating divine energy. Vajra channels ancient mythic force through modern-engineered celestial armor.",
     origin: "Awakened from an ancient sanctuary buried deep beneath Neo-Babylon carrying the legacy of forgotten pantheons."
   },
@@ -32,7 +32,7 @@ const HEROES_DATA = {
     subtitle: "The Infiltrator & Master Spy",
     power: "The Infiltrator",
     badge: "Stealth Ops",
-    img: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=600&auto=format&fit=crop",
+    img: "/ghostmark.jpeg",
     bio: "Operating strictly from the shadows, Ghostmark is an elusive operative equipped with state-of-the-art optical camouflage.",
     origin: "A former black-ops specialist who volunteered for covert Shadow Syndicate trials, receiving advanced neural enhancements."
   },
@@ -41,7 +41,7 @@ const HEROES_DATA = {
     subtitle: "Advanced AI & Reconstructing Machine",
     power: "The AI Machine",
     badge: "AI Recon",
-    img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop",
+    img: "/cybersnare.jpeg",
     bio: "Cybersnare is an artificial intelligence marvel capable of instantaneous matter reconstruction and cybernetic interfacing.",
     origin: "Constructed at the Quantum Vault research labs as an autonomous defense network before achieving sentient awakening."
   },
@@ -50,7 +50,7 @@ const HEROES_DATA = {
     subtitle: "Master Builder & Original Force",
     power: "The Unknown Force",
     badge: "Master Builder",
-    img: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=600&auto=format&fit=crop",
+    img: "/forge.jpeg",
     bio: "Forge combines brutal strength with peerless tactical engineering and self-repairing quantum alloy armor.",
     origin: "Forged in stellar foundries of deep space, designing his legendary suit to combat encroaching dimensional tyrants."
   }

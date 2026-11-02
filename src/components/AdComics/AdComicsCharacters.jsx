@@ -54,15 +54,9 @@ export const AdComicsCharacters = ({ openHeroModal }) => {
           </div>
 
           <div className="lg:col-span-6">
-            <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 bg-[#12141c] [box-shadow:0_0_35px_rgba(59,130,246,0.15)] aspect-[16/10] flex items-center justify-center group">
+            <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 [box-shadow:0_0_35px_rgba(59,130,246,0.15)] aspect-[16/10] group">
+              <img src="/polaris.jpeg" alt="Polaris" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-950/60 via-transparent to-slate-900/40"></div>
-              <div className="relative z-10 text-center p-8 space-y-3">
-                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center shadow-2xl shadow-blue-500/50 border-2 border-white/20">
-                  <span className="text-3xl font-black text-white font-['Outfit']">P</span>
-                </div>
-                <h4 className="text-xl font-bold font-['Outfit'] text-white tracking-wider">POLARIS</h4>
-                <p className="text-xs text-blue-300 tracking-widest uppercase">Magnetic Guardian</p>
-              </div>
               <div className="absolute top-4 right-4 px-3 py-1 rounded bg-black/60 backdrop-blur border border-slate-700 text-[10px] text-slate-400 font-mono">AD-CHR-01</div>
             </div>
           </div>
@@ -73,15 +67,9 @@ export const AdComicsCharacters = ({ openHeroModal }) => {
       <section id="vajra" className="py-24 border-b border-slate-800/40 relative overflow-hidden bg-gradient-to-b from-[#0d111a] to-[#0a0b0e]">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 order-2 lg:order-1">
-            <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 bg-[#12141c] [box-shadow:0_0_35px_rgba(6,182,212,0.2)] aspect-[16/10] flex items-center justify-center group">
+            <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 [box-shadow:0_0_35px_rgba(6,182,212,0.2)] aspect-[16/10] group">
+              <img src="/vajra.jpeg" alt="Vajra" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-tr from-amber-950/40 via-transparent to-slate-900/40"></div>
-              <div className="relative z-10 text-center p-8 space-y-3">
-                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-amber-600 to-yellow-500 flex items-center justify-center shadow-2xl shadow-amber-500/40 border-2 border-white/20">
-                  <span className="text-3xl font-black text-white font-['Outfit']">V</span>
-                </div>
-                <h4 className="text-xl font-bold font-['Outfit'] text-white tracking-wider">VAJRA</h4>
-                <p className="text-xs text-amber-300 tracking-widest uppercase">Divine Strength</p>
-              </div>
               <div className="absolute top-4 right-4 px-3 py-1 rounded bg-black/60 backdrop-blur border border-slate-700 text-[10px] text-slate-400 font-mono">AD-CHR-02</div>
             </div>
           </div>
@@ -158,15 +146,9 @@ export const AdComicsCharacters = ({ openHeroModal }) => {
           </div>
 
           <div className="lg:col-span-6">
-            <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 bg-[#12141c] [box-shadow:0_0_35px_rgba(59,130,246,0.15)] aspect-[16/10] flex items-center justify-center group">
+            <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 [box-shadow:0_0_35px_rgba(59,130,246,0.15)] aspect-[16/10] group">
+              <img src="/ghostmark.jpeg" alt="Ghostmark" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-950/60 via-transparent to-slate-900/40"></div>
-              <div className="relative z-10 text-center p-8 space-y-3">
-                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-purple-700 to-indigo-900 flex items-center justify-center shadow-2xl shadow-purple-500/40 border-2 border-white/20">
-                  <span className="text-3xl font-black text-white font-['Outfit']">G</span>
-                </div>
-                <h4 className="text-xl font-bold font-['Outfit'] text-white tracking-wider">GHOSTMARK</h4>
-                <p className="text-xs text-purple-300 tracking-widest uppercase">Stealth Operative</p>
-              </div>
               <div className="absolute top-4 right-4 px-3 py-1 rounded bg-black/60 backdrop-blur border border-slate-700 text-[10px] text-slate-400 font-mono">AD-CHR-03</div>
             </div>
           </div>
@@ -177,15 +159,9 @@ export const AdComicsCharacters = ({ openHeroModal }) => {
       <section id="cybersnare" className="py-24 border-b border-slate-800/40 relative overflow-hidden bg-gradient-to-b from-[#0d111a] to-[#0a0b0e]">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 order-2 lg:order-1">
-            <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 bg-[#12141c] [box-shadow:0_0_35px_rgba(6,182,212,0.2)] aspect-[16/10] flex items-center justify-center group">
+            <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 [box-shadow:0_0_35px_rgba(6,182,212,0.2)] aspect-[16/10] group">
+              <img src="/cybersnare.jpeg" alt="Cybersnare" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-950/60 via-transparent to-slate-900/40"></div>
-              <div className="relative z-10 text-center p-8 space-y-3">
-                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-cyan-600 to-blue-800 flex items-center justify-center shadow-2xl shadow-cyan-500/40 border-2 border-white/20">
-                  <span className="text-3xl font-black text-white font-['Outfit']">C</span>
-                </div>
-                <h4 className="text-xl font-bold font-['Outfit'] text-white tracking-wider">CYBERSNARE</h4>
-                <p className="text-xs text-cyan-300 tracking-widest uppercase">AI Reconstruction Machine</p>
-              </div>
               <div className="absolute top-4 right-4 px-3 py-1 rounded bg-black/60 backdrop-blur border border-slate-700 text-[10px] text-slate-400 font-mono">AD-CHR-04</div>
             </div>
           </div>
@@ -262,15 +238,9 @@ export const AdComicsCharacters = ({ openHeroModal }) => {
           </div>
 
           <div className="lg:col-span-6">
-            <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 bg-[#12141c] [box-shadow:0_0_35px_rgba(59,130,246,0.15)] aspect-[16/10] flex items-center justify-center group">
+            <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 [box-shadow:0_0_35px_rgba(59,130,246,0.15)] aspect-[16/10] group">
+              <img src="/forge.jpeg" alt="Forge" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-tr from-emerald-950/60 via-transparent to-slate-900/40"></div>
-              <div className="relative z-10 text-center p-8 space-y-3">
-                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-emerald-600 to-teal-800 flex items-center justify-center shadow-2xl shadow-emerald-500/40 border-2 border-white/20">
-                  <span className="text-3xl font-black text-white font-['Outfit']">F</span>
-                </div>
-                <h4 className="text-xl font-bold font-['Outfit'] text-white tracking-wider">FORGE</h4>
-                <p className="text-xs text-emerald-300 tracking-widest uppercase">Industrial Force</p>
-              </div>
               <div className="absolute top-4 right-4 px-3 py-1 rounded bg-black/60 backdrop-blur border border-slate-700 text-[10px] text-slate-400 font-mono">AD-CHR-05</div>
             </div>
           </div>
@@ -290,8 +260,8 @@ export const AdComicsCharacters = ({ openHeroModal }) => {
               onClick={() => openHeroModal('polaris')}
               className="group bg-[#12141c] hover:bg-[#181b26] p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition-all flex flex-col justify-between text-center shadow-xl cursor-pointer"
             >
-              <div className="w-16 h-16 mx-auto rounded-full bg-blue-950 border border-blue-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <span className="font-['Outfit'] font-bold text-blue-400 text-lg">P</span>
+              <div className="w-16 h-16 mx-auto rounded-full overflow-hidden border border-blue-500/30 mb-4 group-hover:scale-110 transition-transform">
+                <img src="/polaris.jpeg" alt="Polaris" className="w-full h-full object-cover object-top" />
               </div>
               <div>
                 <h3 className="font-['Outfit'] font-bold text-white text-base mb-1">POLARIS</h3>
@@ -304,8 +274,8 @@ export const AdComicsCharacters = ({ openHeroModal }) => {
               onClick={() => openHeroModal('vajra')}
               className="group bg-[#12141c] hover:bg-[#181b26] p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all flex flex-col justify-between text-center shadow-xl cursor-pointer"
             >
-              <div className="w-16 h-16 mx-auto rounded-full bg-amber-950 border border-amber-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <span className="font-['Outfit'] font-bold text-amber-400 text-lg">V</span>
+              <div className="w-16 h-16 mx-auto rounded-full overflow-hidden border border-amber-500/30 mb-4 group-hover:scale-110 transition-transform">
+                <img src="/vajra.jpeg" alt="Vajra" className="w-full h-full object-cover object-top" />
               </div>
               <div>
                 <h3 className="font-['Outfit'] font-bold text-white text-base mb-1">VAJRA</h3>
@@ -318,8 +288,8 @@ export const AdComicsCharacters = ({ openHeroModal }) => {
               onClick={() => openHeroModal('ghostmark')}
               className="group bg-[#12141c] hover:bg-[#181b26] p-6 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition-all flex flex-col justify-between text-center shadow-xl cursor-pointer"
             >
-              <div className="w-16 h-16 mx-auto rounded-full bg-purple-950 border border-purple-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <span className="font-['Outfit'] font-bold text-purple-400 text-lg">G</span>
+              <div className="w-16 h-16 mx-auto rounded-full overflow-hidden border border-purple-500/30 mb-4 group-hover:scale-110 transition-transform">
+                <img src="/ghostmark.jpeg" alt="Ghostmark" className="w-full h-full object-cover object-top" />
               </div>
               <div>
                 <h3 className="font-['Outfit'] font-bold text-white text-base mb-1">GHOSTMARK</h3>
@@ -332,8 +302,8 @@ export const AdComicsCharacters = ({ openHeroModal }) => {
               onClick={() => openHeroModal('cybersnare')}
               className="group bg-[#12141c] hover:bg-[#181b26] p-6 rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all flex flex-col justify-between text-center shadow-xl cursor-pointer"
             >
-              <div className="w-16 h-16 mx-auto rounded-full bg-cyan-950 border border-cyan-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <span className="font-['Outfit'] font-bold text-cyan-400 text-lg">C</span>
+              <div className="w-16 h-16 mx-auto rounded-full overflow-hidden border border-cyan-500/30 mb-4 group-hover:scale-110 transition-transform">
+                <img src="/cybersnare.jpeg" alt="Cybersnare" className="w-full h-full object-cover object-top" />
               </div>
               <div>
                 <h3 className="font-['Outfit'] font-bold text-white text-base mb-1">CYBERSNARE</h3>
@@ -346,8 +316,8 @@ export const AdComicsCharacters = ({ openHeroModal }) => {
               onClick={() => openHeroModal('forge')}
               className="group bg-[#12141c] hover:bg-[#181b26] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between text-center shadow-xl cursor-pointer"
             >
-              <div className="w-16 h-16 mx-auto rounded-full bg-emerald-950 border border-emerald-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <span className="font-['Outfit'] font-bold text-emerald-400 text-lg">F</span>
+              <div className="w-16 h-16 mx-auto rounded-full overflow-hidden border border-emerald-500/30 mb-4 group-hover:scale-110 transition-transform">
+                <img src="/forge.jpeg" alt="Forge" className="w-full h-full object-cover object-top" />
               </div>
               <div>
                 <h3 className="font-['Outfit'] font-bold text-white text-base mb-1">FORGE</h3>

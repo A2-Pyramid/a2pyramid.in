@@ -26,7 +26,7 @@ export const HeroModal = ({ isOpen, heroData, onClose }) => {
         <div className="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
           {heroData.img && (
             <div className="md:col-span-5 aspect-[3/4] rounded-xl overflow-hidden border border-cyan-500/30">
-              <img src={heroData.img} alt={heroData.name} className="w-full h-full object-cover" />
+              <img src={heroData.img} alt={heroData.name} className="w-full h-full object-cover object-top" />
             </div>
           )}
           <div className={`${heroData.img ? 'md:col-span-7' : 'md:col-span-12'} flex flex-col gap-4`}>

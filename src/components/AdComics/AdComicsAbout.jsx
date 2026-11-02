@@ -45,9 +45,9 @@ export const AdComicsAbout = ({ openHeroModal, openUniverseModal }) => {
             <div className="lg:col-span-6 relative">
               <div className="relative aspect-[16/10] rounded-2xl border border-slate-700/60 overflow-hidden shadow-2xl group">
                 <img
-                  src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1000&auto=format&fit=crop"
+                  src="/polaris.jpeg"
                   alt="AD Comics Universe Concept"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 bg-[#08090d]/80 backdrop-blur-md p-4 rounded-xl border border-slate-800 flex items-center justify-between">
@@ -149,7 +149,7 @@ export const AdComicsAbout = ({ openHeroModal, openUniverseModal }) => {
               className="group relative rounded-2xl border border-slate-800 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-cyan-500/60 hover:shadow-2xl hover:shadow-cyan-500/20 flex flex-col cursor-pointer"
             >
               <div className="relative aspect-[3/4] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=600&auto=format&fit=crop" alt="Polaris" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <img src="/polaris.jpeg" alt="Polaris" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
               </div>
               <div className="p-5 flex flex-col flex-grow justify-between">
@@ -167,7 +167,7 @@ export const AdComicsAbout = ({ openHeroModal, openUniverseModal }) => {
               className="group relative rounded-2xl border border-slate-800 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/60 hover:shadow-2xl hover:shadow-amber-500/20 flex flex-col cursor-pointer"
             >
               <div className="relative aspect-[3/4] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=600&auto=format&fit=crop" alt="Vajra" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <img src="/vajra.jpeg" alt="Vajra" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
               </div>
               <div className="p-5 flex flex-col flex-grow justify-between">
@@ -185,7 +185,7 @@ export const AdComicsAbout = ({ openHeroModal, openUniverseModal }) => {
               className="group relative rounded-2xl border border-slate-800 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-purple-500/60 hover:shadow-2xl hover:shadow-purple-500/20 flex flex-col cursor-pointer"
             >
               <div className="relative aspect-[3/4] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=600&auto=format&fit=crop" alt="Ghostmark" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <img src="/ghostmark.jpeg" alt="Ghostmark" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
               </div>
               <div className="p-5 flex flex-col flex-grow justify-between">
@@ -203,7 +203,7 @@ export const AdComicsAbout = ({ openHeroModal, openUniverseModal }) => {
               className="group relative rounded-2xl border border-slate-800 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/60 hover:shadow-2xl hover:shadow-emerald-500/20 flex flex-col cursor-pointer"
             >
               <div className="relative aspect-[3/4] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop" alt="Cybersnare" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <img src="/cybersnare.jpeg" alt="Cybersnare" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
               </div>
               <div className="p-5 flex flex-col flex-grow justify-between">
@@ -221,7 +221,7 @@ export const AdComicsAbout = ({ openHeroModal, openUniverseModal }) => {
               className="group relative rounded-2xl border border-slate-800 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-blue-500/60 hover:shadow-2xl hover:shadow-blue-500/20 flex flex-col cursor-pointer"
             >
               <div className="relative aspect-[3/4] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=600&auto=format&fit=crop" alt="Forge" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <img src="/forge.jpeg" alt="Forge" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
               </div>
               <div className="p-5 flex flex-col flex-grow justify-between">
@@ -282,7 +282,7 @@ export const AdComicsAbout = ({ openHeroModal, openUniverseModal }) => {
 
             <div className="lg:col-span-6">
               <div className="relative aspect-[16/10] rounded-2xl border border-slate-700/60 overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto=format&fit=crop" alt="Future Horizon" className="w-full h-full object-cover opacity-70" />
+                <img src="/forge.jpeg" alt="Future Horizon" className="w-full h-full object-cover object-top opacity-70" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between">
                   <span className="text-xs uppercase tracking-widest text-cyan-300 cinematic-font font-['Orbitron']">Phase 1 & Beyond</span>

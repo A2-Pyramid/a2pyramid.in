@@ -69,9 +69,9 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
               <div className="absolute inset-0 flex items-center justify-center p-4">
                 <div className="relative w-full h-full rounded-xl overflow-hidden shadow-2xl border border-cyan-500/20">
                   <img
-                    src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1200&auto=format&fit=crop"
+                    src="/polaris.jpeg"
                     alt="AD Comics Cinematic Ensemble"
-                    className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover object-top opacity-60 group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
 
@@ -117,7 +117,7 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
             {/* Polaris */}
             <div className="group relative rounded-2xl border border-slate-700/40 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-cyan-500/60 hover:shadow-2xl hover:shadow-cyan-500/20 flex flex-col">
               <div className="relative aspect-[3/4] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=600&auto=format&fit=crop" alt="Polaris" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <img src="/polaris.jpeg" alt="Polaris" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
                 <span className="absolute top-3 left-3 bg-cyan-500/20 backdrop-blur-md border border-cyan-500/40 text-cyan-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Visual Center</span>
               </div>
@@ -140,7 +140,7 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
             {/* Vajra */}
             <div className="group relative rounded-2xl border border-slate-700/40 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/60 hover:shadow-2xl hover:shadow-amber-500/20 flex flex-col">
               <div className="relative aspect-[3/4] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=600&auto=format&fit=crop" alt="Vajra" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <img src="/vajra.jpeg" alt="Vajra" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
                 <span className="absolute top-3 left-3 bg-amber-500/20 backdrop-blur-md border border-amber-500/40 text-amber-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Divine Force</span>
               </div>
@@ -163,7 +163,7 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
             {/* Ghostmark */}
             <div className="group relative rounded-2xl border border-slate-700/40 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-purple-500/60 hover:shadow-2xl hover:shadow-purple-500/20 flex flex-col">
               <div className="relative aspect-[3/4] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=600&auto=format&fit=crop" alt="Ghostmark" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <img src="/ghostmark.jpeg" alt="Ghostmark" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
                 <span className="absolute top-3 left-3 bg-purple-500/20 backdrop-blur-md border border-purple-500/40 text-purple-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Stealth Ops</span>
               </div>
@@ -186,7 +186,7 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
             {/* Cybersnare */}
             <div className="group relative rounded-2xl border border-slate-700/40 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/60 hover:shadow-2xl hover:shadow-emerald-500/20 flex flex-col">
               <div className="relative aspect-[3/4] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop" alt="Cybersnare" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <img src="/cybersnare.jpeg" alt="Cybersnare" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
                 <span className="absolute top-3 left-3 bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 text-emerald-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">AI Recon</span>
               </div>
@@ -209,7 +209,7 @@ export const AdComicsHome = ({ openHeroModal, showToast, showUniverseLore }) => 
             {/* Forge */}
             <div className="group relative rounded-2xl border border-slate-700/40 overflow-hidden bg-gradient-to-b from-slate-900 to-[#08090d] transition-all duration-300 hover:-translate-y-2 hover:border-blue-500/60 hover:shadow-2xl hover:shadow-blue-500/20 flex flex-col">
               <div className="relative aspect-[3/4] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=600&auto=format&fit=crop" alt="Forge" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" />
+                <img src="/forge.jpeg" alt="Forge" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500 opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#08090d] via-transparent to-transparent"></div>
                 <span className="absolute top-3 left-3 bg-blue-500/20 backdrop-blur-md border border-blue-500/40 text-blue-300 text-[10px] uppercase font-semibold px-2.5 py-1 rounded">Master Builder</span>
               </div>

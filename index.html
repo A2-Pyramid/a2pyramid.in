@@ -17,6 +17,9 @@
         if(redirect && redirect !== location.href){
           history.replaceState(null, null, redirect);
         }
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js');
+        }
       })();
     </script>
     <script>
